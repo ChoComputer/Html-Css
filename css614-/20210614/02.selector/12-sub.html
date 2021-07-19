@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>하위 종속자</title>
+        <style>
+            .box a{border-bottom: 2px dashed black ; padding:30px;}
+            /* 패딩의 범위가 늘어난거임 글자는 그대로이고 http://tcpschool.com/css/css_boxmodel_padding 가서 패딩영역확인 */
+            /* .box a{background-color: burlywood;} */
+            /* 띄어쓰기는 자손임 box내의 모든것이 다 해당된다는것임 
+               첫번째숫자는 위아래 두번쨰는 좌우 임
+               하위 선택자는 하위 요소이기만 하면 선택이
+               되는 선택자임 기존의 > 는 반드시 부모 자식 관계가
+               성립되어야 했지만 하위 선택자는 자손이기만 하면 되고
+               심지어 중간의 일부계층을 생략해도 작동함*/
+            /* *{margin: 10;} */
+        </style>
+    </head>
+    <body>
+        <h1>인강 사이트 바로가기</h1>
+        <ul class="box">
+            <li> <a href="#">자바 인강</a> </li>
+            <li> <a href="#">파이썬 인강</a> </li>
+            <li> <a href="#">cpp 인강</a> </li>
+        </ul>
+    </body>
+</html>

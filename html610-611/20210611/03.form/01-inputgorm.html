@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>input & form</title>
+    </head>
+    <body>
+        <h1>input 요소들</h1>
+        <form>
+            <!--fieldset은 여닫는 부분 사이를 사각형으로 영역을 만들어 준다. -->
+            <fieldest>
+                <legend> 회원가입 </legend>
+                <p>아이디 : <input type="text"/></p>
+                <p>비밀번호 : <input type="password"/></p>
+                <p>메일 수신 여부 :
+                    <input type="radio" value ="y" name ="recieve">예
+                    <input type="radio" value ="z" name ="recieve">아니오
+                </p>
+                <p>
+                    식사여부: <input type="radio" name="eat"/>예
+                             <input type="radio" name="eat"/>아니오                            
+                </p>
+                <!--그냥 input은 인라인 요소임 value는 지금은 무시 나중에 배움
+                     recieve의 범위가 같으면 한개만 고르거나 아예안고르거나임 이름이 다르면 같은 취급안함-->
+                <p>현재 공부중인것 :
+                    <input type="checkbox" name="study"/>HTML
+                    <input type="checkbox" name="study"/>CSS
+                    <input type="checkbox" name="study"/>JS
+                </p>
+                <p>제출
+                    <input type ="submit" value="전송">                
+                    <input type ="reset" value="취소">                
+                    <input type ="button" value="확인">                
+                </p>     
+            </fieldest>
+        </form>
+    </body>
+</html>

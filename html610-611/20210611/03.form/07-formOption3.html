@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{border:2px soild #eb5e0cc7}
+            /* 이것도 필드셋이라 안먹히나? */
+        </style>
+        <title>disabled</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>모의 글쓰기 창</legend>
+            <form>
+                <div id ="top">
+                    <p>글쓴이: <input type="text" value="asgsdg" readonly/></p>
+                    <!--readonly 기억해두자!! 겁나많이씀-->
+                </div>
+                <div id="header">
+                    <p>제목 : <input type="text"/></p>
+                </div>
+                <div id="main">
+                    <p>본문 :</p> <p><textarea cols="30" rows="10"></textarea></p>                   
+                </div>
+                <div id="input">
+                    <input type ="submit" value="제출"/>
+                    <input type ="reset" value="초기화"/>                    
+                </div>
+            </form>
+        </fieldset>
+    </body>
+</html>

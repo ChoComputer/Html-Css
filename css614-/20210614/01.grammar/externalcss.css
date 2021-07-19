@@ -1,0 +1,6 @@
+div{ color: red; background-color: yellow;}
+/* 이건 조건부 div만 타겟팅 */
+/* *{ color: red; background-color: yellow;} */
+/* 이건 전체 선택이 됨  */
+
+h1{ color: blue;}

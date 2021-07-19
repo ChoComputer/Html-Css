@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table merge (테이블 병합)</title>
+    </head>
+    <body>
+        <h1>표 만들기</h1>
+        <h2>셀 병합하기</h2>
+        <!-- colspan="3"을 주면 3칸짜리 컬럼을 1칸으로 합쳐줍니다 -->
+        <table border="1">
+            <tr>
+                <td></td>
+                <td colspan="2">공연요금</td>
+            </tr>
+            <tr>
+                <td>구분</td>
+                <td>S석</td>
+                <td>VIP</td>
+            </tr>
+            <tr>
+                <td colspan="4">성인</td>
+                <!-- 맥시멈 4열 이라 표시해도 3칸까지 표기됨 하지만 하면안됨 개발자들 햇갈림 or 버그 -->
+            </tr>
+            
+        </table>
+    </body>
+</html>

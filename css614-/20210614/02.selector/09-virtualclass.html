@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>가상 선택자</title>
+        <style>
+            *{margin: 0;}
+            a:hover {color: rgb(35, 236, 9);}
+            /* a:hover 마우스커서가 갓을때 hover은 다른것에도됨 */
+            a:active{color: red;}
+            /* a:active 마우스커서가 눌렀을때 active역시 다른것에도됨 */
+            a:link{color:red}
+            /* a:link는 클릭한 적이 없는 상태의 a 태그에 적용할
+                        css를 설정 합니다. 이건 a 만됨  */
+            a:visited{color: rgb(15, 141, 199);}       
+             /* a:visited는 방문한 a태그에 적용할 css를 설정함   */
+             h1:active{color: yellow;}
+             /* h1:hover{color: rgb(12, 247, 24);} */
+             /*이것도됨*/
+        </style>
+    </head>
+    <body>
+        <h1>한국ICT인재개발원</h1>
+        <ul>
+            <li><a href="https://www.naver.com/">회사소개</a></li>
+            <li><a href="#">강의소개</a></li>
+            <li><a href="https://www.daum.net">문의하기</a></li>
+            <li><a href="https://www.joara.com">조아라</a></li>
+        </ul>
+    </body>
+</html>

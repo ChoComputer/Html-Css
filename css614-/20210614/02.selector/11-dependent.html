@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>종속 선택자</title>
+        <style>
+             p.more>a {color: rgb(51, 255, 0);}
+             /* .more>a  p>a   3개다 동일함 */
+            /* 태그명.클래스명
+               태그명#아이디명
+               과 같은 방식으로 조합해서 호출 가능 */
+            *{width: 300px;}
+            *{margin: 10;}
+        </style>
+    </head>
+    <body>
+        <h1>퍼블리싱 대회 결과!</h1>
+        <ul class="box">
+            <li> <a href="#">우승 사이트</a> </li>
+            <li> <a href="#">준우승 사이트</a> </li>
+            <li> <a href="#">입상 사이트</a> </li>
+        </ul>
+        <br/>
+        <p class="more">우호 <a href="#">참여작보기</a> digh </p>
+    </body>
+</html>

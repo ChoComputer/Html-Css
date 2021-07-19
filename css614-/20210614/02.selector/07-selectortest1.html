@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>연습과제</title>
+        <style>
+            div > h1{color: blue;}
+            h1 + p {background-color: blanchedalmond;}
+            p > span{color: crimson;}
+            .java{border:2px solid rgb(42, 20, 238) ;}
+            .java > h2{color: blueviolet;} 
+            /* 이건 자바 앞의 점은 색안칠한거임 자바안에 h2만해서 */
+            .java > p {color: cadetblue;}
+            .python{border:2px solid rgb(241, 67, 13);color: cyan;}
+            .python > p {color: red;}
+            .cpp{border:2px solid rgb(241, 226, 5);color: darkgreen;}
+            .cpp > p {color: chartreuse;}
+            /* 아래의 코드는 상하여백을 없애 줍니다!! */
+            *{margin:0;}/* 0이상은 숫자뒤에 px붙어야함*/
+            /* 아래의 코드는 좌우여백을 고정해 줍니다!! */
+            #container{width:500px;}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>프로그래밍 언어들</h1>
+            <p>프로그래밍 언어들에대해서
+                <span>차근차근</span>
+                설명해 드리겠습니다.
+            </p>
+            <ul>
+                <li class="java">
+                    <h2>자바</h2>
+                    <p>웹/앱 개발이 모두 됨</p>
+                </li>
+                <li class="python">
+                    <h2>파이썬</h2>
+                    <p>머신러닝 등에 특화</p>
+                </li>
+                <li class="cpp">
+                    <h2>C++</h2>
+                    <p>게임개발에 특화</p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

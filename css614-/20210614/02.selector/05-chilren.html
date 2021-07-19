@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자식선택자</title>
+        <style>
+            body > p {color: red;}
+            body>ul{color: tomato;}
+            li > p {color: royalblue;}
+            ul > li > p {color: royalblue;}
+            /* 자식 선택자는 부모태그 > 자식태그 방식으로 입력
+            두개이상의 계층도 지정가능
+            단 >선택자의 경우 맞닿아 있는 관계가 아니면 설령
+            특정 태그의 하위에 지목된 태그가 있어도 적용되지 않음
+            아래 케이스에 해당 */
+            ul > p {color: rgb(31, 177, 26);}
+            /* ul 에 바로 맞다아 있는p가 없기때문에 적용 안됨 */
+        </style>
+    </head>
+    <body>
+        <h1>여행지목록</h1>
+        <ul>
+            <li><p>7월 : 부산</p></li>
+            <li><p>8월 : 제주</p></li>
+        </ul>
+        <p> ※ 9월 울릉도는 미정입니다.</p>
+        <!-- 자손은 하위 포함하고있는 것들 전부
+             자식은 바로 직접적으로 붙어있는것 -->
+    </body>
+</html>
