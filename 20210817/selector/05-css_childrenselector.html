@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    li>p{color:crimson;}
+    li > a > p {color :cyan;}
+    /*
+     부모 > 자식으로 선택되는 경우
+     무조건 위의 li 태그내부의 p 태그만 적용을 받습니다.
+     >로 연결하는 경우는 바로 붙어있는 요소만 조회.
+    */
+</style>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">7월에 갈 여행지 : 남해 </a></li>
+        <li><p>8월에 갈 여행지 : 서해 </p></li>
+        <li><p>9월에 갈 여행지 : 동해 </p></li>
+    </ul>
+    <p>내년에 갈 여행지 : 태국 </p>
+</body>
+</html>
