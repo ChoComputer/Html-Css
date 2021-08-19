@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    /*
+        display는 박스태그를 블록태그로 만들어주거나
+        블록태그를 박스태그로 만들어 주거나 혹은 아예 박스자체를 화면에
+        보이지 않게(코드상으로는 존재) 만들어주는 역활을 합니다.
+        display:block; - 박스를 블록석성으로 전환(줄바꿈)
+        display:inline; - 박스를 인라인속서 으로 전환(가로나열)
+        displayLinline-block; - 박스를 인라인 요소로 만들지만
+            블록요소에서 쓸수없는 옵션(width,height,padding등)
+            을 쓸수 있도록 허용
+        display:none; -해당요소는 화면에서 표시 안함
+    */
+    *{margin:0; padding: 0;}
+    li{list-style-type: none;}
+    body{font: 12px "굴림",Gulim; margin:20px}
+    #gnb li{display: inline;} /* li 가로화*/
+    #gnb li a{display: inline-block; background: red;
+              color: #fff; width: 100px; height: 23px;
+              padding-top: 10px; text-align: center;} /*인라인이지만 블록요소옵션을 쓸수 있게 만들어놓는다*/
+    #gnb li a:hover{background: #369;}    
+</style>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="container">
+        <h1>주 메뉴</h1>
+        <ul id="gnb">
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+        </ul>
+        <a href="#" width="300px">A태그</a>
+        <a href="#" width="300px">는</a>
+        <a href="#" width="300px">오른쪽으로 감 인라인이라 적용안됨</a>  
+        <a href="#" width="300px">적용하려면 displayLinline-block 해야함</a>  
+    </div됨
+</body>
+</html>
