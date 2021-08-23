@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인창</title>
+<style>
+    *{padding: 0%; margin: 0; text-align: center;}
+	h1,h2{ margin:0; text-indent: 35px; font: small-caps bold 24px/1 sans-serif; text-align: center;}
+	.random{width: 180px; padding: 25px;
+               text-align: justify;}
+    .randomTable{ background-image:url();
+        			}
+    .img{ object-fit: none;}
+    
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+<h1>HongBap</h1></div>
+</div>
+<div class="row" >
+    <div class="col-lg-12">
+<h2>SELCET * FROM MENU </h2></div>
+</div>
+<h5 style ="text-align: right"><span class="lead">${nick_session}(${id_session})</span>님 오신것을 환영합니다~!</h5>
+		<br>
+		<br>
+		<br>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>중식</h2>
+                    <div class="img a"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=중식&page=1"><img src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                </div>
+                <div class="col-md-4">
+                    <h2>한식</h2>
+                    <div class="img b"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=한식&page=1"><img src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                </div>
+                <div class="col-md-4">
+                    <h2 >양식</h2>
+                    <div class="img c"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=양식&page=1"><img src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="row">
+                    <div class="col-md-4">
+                        <h2>일식</h2>
+                        <div class="img"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=일식&page=1"><img src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>분식</h2>
+                            <div class="img"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=분식&page=1"><img src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                            </div>
+                            <div class="col-md-4">
+                    <h2 >Fast Food</h2>
+                    <div class="img"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=패스트푸드&page=1"><img src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+               
+                </div>
+            </div ><br/>
+            <div class="row">
+                <div>
+                   <br/>
+                   <br/>
+                   <br/>
+                        <a href="http://localhost:8181/hongbapProject/randompick.do">
+                            <input type="button" value="Hongbap Random Pick">
+                        </a>
+                   
+                </div>
+                
+            </div>
+        
+        <br/>
+        <br/>
+        <br/>
+        <a href="http://localhost:8181/hongbapProject/logout.do"><input type=button value="로그아웃"></a>
+        <a href="http://localhost:8181/hongbapProject/userinfo.do"><input type=button value="회원정보"></a>
+    </div>
+	
+</body>
+</html>

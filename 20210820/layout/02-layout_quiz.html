@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    *{margin:0; padding: 0;}
+    #header{border:2px dotted red; height:100px;}
+    #body{border:2px solid blue;height: 300px;}
+    #footer{clear:both; border:2px dashed green; height:100px;}
+    body{width: 500px;}
+    #body >div{display: inline-block;} /* 이거 하고 안하고 차이 보기*/
+    div .sideL{border: 2px solid black; float: left; width: 120px; height: 300px;}
+    div .content{border: 2px solid black; float: left; width: 300px; height: 300px;}
+    div .sideR{border: 2px solid black; float: right; width: 120px; height: 300px;}
+
+</style>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="header">
+        헤더
+    </div>
+    <div id="body">
+        <div class="sideL">
+            사이드바(좌)<br/>
+        </div>
+        <div class="contant">
+            컨텐츠<br/>
+        </div>
+        <div class="sideR">
+            사이드바(우)<br/>
+        </div>
+    </div>
+    <div id="footer">
+        바닥
+    </div>
+</body>
+</html>

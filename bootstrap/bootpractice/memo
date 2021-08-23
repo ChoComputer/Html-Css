@@ -1,0 +1,11 @@
+<div class="row">
+      <div class="col-md-3" ><p class="foodca">음식카테고리</p></div>
+      <div class="col-sm-9"><select size="1" name="resCategory" >
+        <option value="한식">한식</option>
+        <option value="중식">중식</option>
+        <option value="일식">일식</option>
+        <option value="양식">양식</option>
+        <option value="분식">분식</option>
+        <option value="패스트푸드">패스트푸드</option>
+      </select></div>
+    </div>
