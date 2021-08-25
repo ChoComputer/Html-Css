@@ -25,11 +25,6 @@ h1 {
 	position: relative;
 }
 
-.button {
-	position: absolute;
-	top: 570px;
-	left: 130px;
-}
 </style>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -41,19 +36,19 @@ h1 {
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<img
-					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
-					class="imgH">
-					<div class="row" style="font-size: 50%;">&nbsp;</div>
-				<h1>${resCategory }게시판목록</h1>
+				<img src="https://item.kakaocdn.net/do/da6fa39c18b79fdd7a5a58987e8a758115b3f4e3c2033bfd702a321ec6eda72c" class="imgH">
+				<h1 class = "text-primary text-center">${resCategory }게시판목록</h1>
 			</div>
 		</div>
+		
+		<hr/>
+		
 		<table class="table table-striped resBoard">
 			<thead>
 				<tr>
-					<th>식당no</th>
-					<th>식당이름</th>
-					<th>카테고리</th>
+					<th class = "text-primary">번호</th>
+					<th class = "text-primary">식당이름</th>
+					<th class = "text-primary">카테고리</th>
 				</tr>
 			</thead>
 			<c:forEach var="res" items="${ResList}">
@@ -64,7 +59,7 @@ h1 {
 				</tr>
 			</c:forEach>
 		</table>
-	</div>
+	
 
 	<%-- 페이징 버튼 만들기 --%>
 	<c:if test="${pageDTO.hasBoard()}">
@@ -97,14 +92,24 @@ h1 {
 	<br />
 	
 		
-		<div class="button">
-			<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><button
-					type="button" class="btn btn-danger">요청하기</button></a> <a
-				href="/hongbapProject/logout.do"><button type="button"
-					class="btn btn-success">로그아웃</button></a> <a
-				href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
-					type="button" class="btn btn-warning buttonMain">메인화면으로
-					가기</button></a>
+		<div class="row">
+			<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp" class="btn btn-primary col-md-2">요청하기</a> 
+			<a href="/hongbapProject/logout.do" class="btn btn-danger col-md-2">로그아웃</a>
+			<a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp" class="btn btn-info col-md-2">메인화면으로 가기</a>
+					</div>
+					
+					<hr/>
+					
+					<footer>
+					
+					<div class="row">
+					<h6 class="text-primary text-center">홈페이지 : <strong>www.hongbap.com</strong></h6>
+					<h6 class="text-primary text-center">만든이 : <strong>신우람 조훈현 서성현</strong></h6>
+					</div>
+					
+					</footer>
+					
+					
 		</div>
 	
 </body>
