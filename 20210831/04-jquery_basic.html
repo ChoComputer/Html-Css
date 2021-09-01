@@ -42,6 +42,27 @@
         // next는 바닐라js의 nextSibling처럼 사용됩니다. (바닐라js: 순수 자바스크립트를 의미)
         $(".obj4").next().css("color","orange");
 
+        //.obj5의 prev의 정렬을 우측정렬로 해주세요
+        // prev는 바닐라js의 prevSibling처럼 사용됩니다.
+        $(".obj5").css("text-align","right");
+
+        // .obj6의 형제인 "li"전체에게 가운데정렬
+        // .siblings("li")를 하면 형제중 li 만 모두 선택
+        $(".obj6").siblings("li").css("text-align","center");
+
+        // 이렇게 $("선택자")로 얻어온 dom요소는
+        // 변수에도 저장이됨
+        var cobj6=$(".obj6");
+        console.log(cobj6);
+
+        // html문서 내부의 폼요소를 선택할때는
+        // $(:타입명)으로 타입에따라 선택할수 있다.
+        // text,password,checkbox,radio등이 있습니다.
+        // 경계는 3픽셀 solid 검은색 으로,
+        // 배경색은 노랑색
+        // 글씨색은 파란색으로 바꾸기
+        $(":test").css({"background-color":"yellow","color":"blue","border":"3px solid black"});
+
 
      });
      // 소괄호 중괄호 순서주의
