@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    *{padding: 0; margin: 0; text-align: center;}
+    li{
+        list-style-type: none;
+    }
+    body{
+        font: 12px/1.5 "굴림",Gulim;
+        margin: 10px;
+    }
+    .ul1{
+        display: none;
+    }
+    .wrap{background-color: blanchedalmond;
+            padding: 50px; margin: 30px; width: 80px;   
+        }
+
+</style>
+<script>
+    //  화면 중간에"메뉴" 라고 적힌 요소 하나만들고
+    // 거기에 마우스를 갖다대면 보이고
+    // ex) 피자 : 20000원 ... 메뉴 5개
+    // 마우스를 메뉴 라고 적힌 요소에 치우면 보이지 않게 만들기 
+    $(()=>{
+        // $(".wrap").mouseenter(function(){
+        //     $(".ul1").css("display","block");
+        // });
+        // $(".wrap").mouseleave(function(){
+        //     $(".ul1").css("display","none");
+        // });
+        
+        $(".wrap").hover(function(){
+            $(".ul1").css("display","block");
+        },function(){
+            $(".ul1").css("display","none");
+        });
+
+    });
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+    <div class="wrap">
+        <h2 class=>Menu</h2>
+        <ul class="ul1">
+            <li>밥 : 200원</li>
+            <li>육개장 : 1000원</li>
+            <li>탕수육 : 3000원</li>
+            <li>순대 : 3000원</li>
+            <li>제육볶음 : 3000원</li>
+        </ul>
+
+    </div>
+</body>
+</html>

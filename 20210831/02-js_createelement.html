@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 01번 파일을 통해 없던 텍스트를 집어넣던가
+    // 혹은 텍스트를 교체하는 로직을 연습했습니다.
+    // 이번에는 단순 텍스트가 아닌 element를 집어넣는
+    // 부분에 대해 알아보겠습니다.
+
+    // 순서
+    // 1. createElement를 이용해 가상 요소를 만들어 줍니다.
+    // 2. 가상요소의 내용물을 필요하다면 채워줍니다.(텍스트)
+    // 3. DOM요소에 appendChilde를 이용해 넣어줍니다.
+
+    window.onload=function(){
+        // dom요소 생성(적용은 안됨)
+        var newPTag=document.createElement("p");
+        console.log(newPTag);
+        var newBtn1=document.createElement("button");
+        var newBtn2=document.createElement("button");
+        console.log(newBtn1);
+        console.log(newBtn2);
+        // 태그 내부에 들어갈 문자는, createTextNode로 만든다음 진행
+        var text1 =document.createTextNode("버튼1");
+        var text2 =document.createTextNode("버튼2");
+
+        // 속성 생성하기
+        //id,class
+        //setAttribute("속성명","부여할값");
+        newBtn1.setAttribute("id","btn1");
+        newBtn1.setAttribute("id","btn2");
+
+        // 문서조립하기
+        // p태그의 자식으로 버튼 1,2 를 넣어주고
+        // 버튼 1,2의 자식으로 text1,2를 넣어줌
+        newBtn1.appendChild(text1);
+        newBtn2.appendChild(text2);
+        // 조립완료된 버튼들은 p태그에 끼워넣어줍니다.
+        newPTag.appendChild(newBtn1);
+        newPTag.appendChild(newBtn2);
+
+        // body태그에 ptag를 끼워넣어 주세요.
+        // 1. body태그를 얻어옵니다.
+        var bodyTag=document.getElementsByTagName("body")[0];
+        console.log(bodyTag);
+        // 2. 조립완료된 ptag를 끼워넣습니다.
+        bodyTag.appendChild(newPTag);        
+
+    }
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="theBox">
+        <h1>요소생성 연습</h1>
+    </div>
+
+</body>
+</html>
