@@ -33,7 +33,7 @@
         // 다음은 id 가 btn1인 요소를 클릭할때
         // class명이 box1인 요소를 천천히 숨기는효과
         $("#btn1").click(function(){
-            $(".box1").hide("nomal");
+            $(".box1").hide("fast");
         });
         $("#btn2").click(function(){
             $(".box1").show("1000"); // 완전히 보일때까지 1초걸림(1000)
@@ -41,13 +41,13 @@
 
         // #btn3 클릭 했을때
         // .box2의 요소에 toggle()을 걸어서
-        // 클릭할때마다 숨겨져있으면 노출시코고
+        // 클릭할때마다 숨겨져있으면 노출시키고
         // 노출되어있으면 클릭되게 만들기
         $("#btn3").click(function(){
             $(".box2").toggle(1000);
         });
 
-        // #btn4를 클릭했을때 자지자신(this)와
+        // #btn4를 클릭했을때 자기자신(this)와
         // 부모(.parent())의 다음형제 (.next())
         // 를 말아올려 숨기는 이벤트 걸기 메서드 체이닝 통해 지정
         $("#btn4").click(function(){ // this를 쓰려면 function이 있어야함 (()=>) 이거로하면 안됨
@@ -61,7 +61,7 @@
         });
 
         // #btn7을 클릭했을때
-        // 크릭한 요소의 부모의 다음 형제에 대해서 fadeout을 1000걸기
+        // 클릭한 요소의 부모의 다음 형제에 대해서 fadeout을 1000걸기
         $("#btn7").click(function(){
             $(this).parent().next().fadeOut(1000);
         });
@@ -110,14 +110,14 @@
             혹은 밀리초(1000분의 1초)단위의 숫자로 입력해도<br>
             그입력한 시간에 걸쳐서 작동합니다
         </p>
-
+        
         <h2>Toggle 효과</h2>
         <p><button id="btn3">toggle</button></p>
         <p class="box2">
             선택요소가 숨겨져 있다면 보이게,<br>
             보인다면 숨기게 만들어 줍니다.
         </p>
-
+        
         <h2>sideDown/Up 효과</h2>
         <p>
             <button id="btn4">slideUp</button>
