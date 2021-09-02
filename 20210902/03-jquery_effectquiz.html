@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    *{padding: 0;margin: 0;}
+    ul {display: none;}
+    #btn2{display: none;}
+    #menu{background-color: blanchedalmond; padding: 40px;width: 80px;}
+    #food{color: blue;}
+</style>
+<script>
+    // 아까처럼 메뉴판을 만들어 주시되
+    // 이번에는 hover이 아닌 onclick 이벤트를 걸어서
+    // 버튼을 클릭하면 메뉴판이 보이고 다시클릭하면 메뉴판이 사라지도록하기
+    // 메뉴판이 안보일떄는 버튼글씨가 메뉴보기
+    //메뉴판이 보일땐 버튼글씨가 메뉴닫기가 되도록 처리하기
+    $(()=>{
+        // $("#btn").click(function(){
+            
+        //     $("#food").slideToggle("1000");
+        //     if($(this).html()==="메뉴보기")
+        //     {$(this).html("메뉴닫기");}
+        //     else{
+        //         $(this).html("메뉴보기");
+        //     }
+        // });
+        
+        $("#btn").click(function(){
+            $("#food").toggle("1000");
+            //$("요소").text()는 innerHTML을 리턴해줍니다
+            // .text("바꿀문자")를 넣으면 교체해 주줍시다.
+            // .text는 jqurey에서만 사용가능 html문법으로 하는게 더좋음
+            if($(this)[0].innerText==="메뉴보기"){
+                $(this)[0].innerText ="메뉴닫기"; 
+                //innerText는 대처가능 $(this).text("메뉴닫기")
+            }else if($(this)[0].innerText==="메뉴닫기"){
+                $(this)[0].innerText="메뉴보기";
+            }
+            console.log($(this)[0].innerText);
+        });
+
+
+    });
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="menu">
+        <button id="btn">메뉴보기</button>
+        <ul id="food">
+           <li> 잡고기탕수육 : 만원</li>
+           <li> 돼지탕수육 : 만4천원</li>
+           <li> 소탕수육 : 2만</li>
+           <li> 고급소탕수육 : 3만</li>
+           <li> 한우탕수육 : 5만</li>
+        </ul>
+    </div>
+</body>
+</html>
