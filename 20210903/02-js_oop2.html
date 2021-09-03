@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 자바스크립트는 객체가 완전히 똑같이 사용해야 하는
+    // 메더스등에 대해서는 공용공간을 지정할 수 있도록
+    // 프로토 타입을 제공합니다.
+    // 프로토 타입 공간에 메서드를 저장해 두면
+    // new키워드로 만든 객체들은 모두 프로토 타입을 공유해
+    // 메서드를 호출해 메모리공간을 절약할 수가 있다.
+
+    // 객체가 개별적으로 가져야하는 멤버 변수만
+    // 선언하고 클래스 정의 끝내기
+    function Person(name){
+        this.name=name;
+    }
+
+    // 클래스명.prototype은 모든 객체의 공용공간으로 사용함
+    // 공용 공간에 메서드를 직접 저장합니다.
+    Person.prototype.getName=function(){
+        return this.name;
+    }
+
+    Person.prototype.setName=function(){
+        this.name=name;
+    }
+
+    var p1 =new Person("A");
+    console.log(p1.getName());
+
+    var p2 =new Person("B");
+    console.log(p2.getName());
+    
+    var p3 =new Person("C");
+    console.log(p3.getName());
+
+
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>
