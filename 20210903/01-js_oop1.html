@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 자바스크립트의 객체지향 프로그래밍은 자바와 유사하나
+    // 명시적인 키워드가 많이 부족하고
+    // 실행형식도 자바스크립트에서만 쓰는 일부개념이 있어
+    // 예외적인 상황이 많이 발생합니다.
+
+    // clsss란 키워드를 지원하기는 하는데 우선ES5 기준의 
+    // 객체지향프로그램을 보겠습니다.
+    // 과거에는 그냥 함수를 만들어 놓고 클래스처럼
+    // 활용하는 방식을 취했습니다.
+    
+    // 함수 이지만 내부에 this 키워드를 써서 변수를 만들고
+    // 함수를 만들어주면 클래스처럼 사용가능
+    function Person(name){
+        this.name=name;
+        this.getName=function(){
+            return this.name;
+        }
+        this.setName=function(name){
+            this.name=name;
+        }
+    }
+    var me = new Person("cho");
+    console.log(me.getName());
+
+    me.setName("hoon");
+    console.log(me.getName());
+
+    console.log(me);
+
+    var p1 =new Person("man");
+    console.log(p1.getName());
+
+    p1.setName("manA");
+    console.log(p1.getName());
+
+    var p2 =new Person("woman");
+    console.log(p2.getName());
+
+    p2.setName("womanA");
+    console.log(p2.getName());
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>
